@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+  int printname(int a,int b ){
+    int c=a+b;
+    return c;
+    
+  }
+int main() {
+  int x= printname(1,103);
+  cout<<x;
+  return 0;
+}
