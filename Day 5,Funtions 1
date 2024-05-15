@@ -106,3 +106,24 @@ int main() {
   
   return 0;
 }
+
+
+
+#include <iostream>
+using namespace std;
+void countnum(long n1){
+    if(n1%2==0){
+        cout<<"Even"<<endl;
+    }
+    else{
+        cout<<"Odd";
+    }
+ }
+int main() {
+  long a;
+  cout<<"Enter the no:"<<endl;
+  cin>>a;
+   countnum(a);
+  
+  return 0;
+}
