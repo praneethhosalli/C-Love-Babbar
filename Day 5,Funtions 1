@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int printsum(int n1,int n2,int n3){
+  int d=n1+n2+n3;
+  return d;
+}
+int main() {
+  int a,b,c;
+  cout<<"Enter the nos:"<<endl;
+  cin>>a>>b>>c;
+  int sum= printsum(a,b,c);
+  cout<<"Sum is :"<<sum<<endl;
+  return 0;
+}
