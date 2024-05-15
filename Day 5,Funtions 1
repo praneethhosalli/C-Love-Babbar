@@ -84,3 +84,25 @@ int main() {
   
   return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+void countnum(int n1){
+    int count=0;
+  for(int i=0;i<=n1;i++){
+      if(i%2==0){
+      count=i+count;
+      }
+      
+  }
+  cout<<count<<endl;
+ }
+int main() {
+  int a;
+  cout<<"Enter the no:"<<endl;
+  cin>>a;
+   countnum(a);
+  
+  return 0;
+}
