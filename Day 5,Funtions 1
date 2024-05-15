@@ -12,3 +12,33 @@ int main() {
   cout<<"Sum is :"<<sum<<endl;
   return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+void maxnum(int n1,int n2,int n3){
+  if(n1>n2){
+      if(n1>n3){
+          cout<<"Number 1 is greater "<<n1;
+      }
+      else{
+          cout<<"Number 3 is greater"<<n3;
+      }
+  }
+  else if (n2>n1){
+      if(n2>n3){
+          cout<<"Number 2 is greater"<<n2;
+      }
+      else{
+          cout<<"Number 3 is greater"<<n3;
+      }
+  }
+ }
+int main() {
+  int a,b,c;
+  cout<<"Enter the nos:"<<endl;
+  cin>>a>>b>>c;
+   maxnum(a,b,c);
+  
+  return 0;
+}
