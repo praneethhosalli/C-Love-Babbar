@@ -104,3 +104,25 @@ int main() {
 
     return 0;
 }
+
+
+
+
+#include <iostream>
+using namespace std ;
+
+void min(int arr[],int size){
+    int base=arr[0];
+    for(int i=0;i<size;i++){
+        if(base>arr[i]){
+            base = arr[i];
+        }
+    }
+    cout<<base;
+}
+int main() {
+    int arr[5]={94,-100,349,9398,49};
+    int size = 5;
+    min(arr,size);
+    return 0;
+}
