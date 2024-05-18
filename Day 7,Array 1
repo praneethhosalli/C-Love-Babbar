@@ -238,3 +238,31 @@ int main() {
     min(arr,size);
     return 0;
 }
+
+
+
+#include <iostream>
+#include <climits>
+using namespace std ;
+
+void min(int arr[],int size){
+     int i=0;
+     int r=size-1;
+     while(i<=r){
+         if(i==r){
+             cout<<arr[i]<<" ";
+         }
+         else{
+         cout<<arr[i]<<" ";
+         cout<< arr[r]<<" ";
+         }
+         i++;
+         r--;
+     }
+}
+int main() {
+    int arr[5]={1,2,3,4,5};
+    int size = 5;
+    min(arr,size);
+    return 0;
+}
