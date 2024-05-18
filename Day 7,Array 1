@@ -52,3 +52,28 @@ int main() {
     print(arr,size);
     return 0;
 }
+
+
+#include <iostream>
+using namespace std ;
+bool search(int arr[],int size,int target ){
+    for(int i=0;i<size;i++){
+        if(arr[i]==target){
+            return true;
+        }
+    }
+    return false;
+}
+int main() {
+    int arr[5]={1,2,3,4,5};
+    int size = 5;
+    int target=;
+    bool ans=search(arr,size,target);
+    if(ans==true){
+        cout<<"Found";
+    }
+    else{
+        cout<<"Not Founnd";
+    }
+    return 0;
+}
