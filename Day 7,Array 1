@@ -169,3 +169,28 @@ int main() {
     min(arr,size);
     return 0;
 }
+
+
+#include <iostream>
+#include <climits>
+using namespace std ;
+
+void min(int arr[],int size){
+     int i=0;
+     int r=size-1;
+     while(i<=r){
+         swap(arr[i],arr[r]);
+         i++;
+         r--;
+     }
+     
+     for(int i=0;i<size;i++){
+         cout<<arr[i]<<" ";
+     }
+}
+int main() {
+    int arr[10]={2,3,4,5,12,13,14,17,19,20};
+    int size = 10;
+    min(arr,size);
+    return 0;
+}
