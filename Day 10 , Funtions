@@ -1,0 +1,23 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+string find(int number){
+    string s;
+    if(number%2==1){
+        s = "odd";
+    }
+    else{
+        s = "even";
+    }
+    return s;
+}
+
+int main() {
+    int num = -108;
+    string  ans;
+    ans = find(num);
+    cout<<ans;
+
+    return 0;
+}
