@@ -1,0 +1,43 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    vector<int>arr(3);
+    
+    cout<<"Size of vector is : "<<arr.size();
+    
+    
+    for(int i =0;i<arr.size();i++){
+        cin>>arr[i];
+    }
+    
+    
+    arr.push_back(4);
+    arr.push_back(7);
+    arr.push_back(12);
+    
+    cout<<arr.empty()<<endl<<endl;
+    
+    
+    
+    
+    for(int i =0;i<arr.size();i++){
+        cout<<arr[i]<<endl;
+    }
+    
+    vector< vector <int> > arr (5 , vector<int>(10,-1));
+    
+    for(int i=0;i<arr.size();i++){
+        for(int j=0;j<arr[i].size();j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+
+
+    return 0;
+}
